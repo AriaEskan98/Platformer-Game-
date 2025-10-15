@@ -7,6 +7,10 @@ A simple 2D platformer made with Pygame Zero.
 - Python 3.7 or higher
 - Pygame Zero library
 
+## Libraries
+
+-pygame zero
+
 ## Installation
 
 1. **Install Python** (if not already installed):

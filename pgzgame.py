@@ -223,6 +223,7 @@ class Enemy(Entity):
             self.images_left = ['fly_a', 'fly_b']
             self.images_right = ['fly_left_a', 'fly_left_b']
             self.uses_physics = False
+            
         
         self.start_x = x  # Remember starting position for patrol
         self.start_y = y
