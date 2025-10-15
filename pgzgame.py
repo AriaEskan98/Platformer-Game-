@@ -6,7 +6,7 @@ WIDTH, HEIGHT, TILE_SIZE = 1000, 800, 64
 TITLE = "Platformer Game"
 
 # Game State
-game_state = "MENU"  # Can be "MENU", "PLAYING", or "GAME_OVER"
+game_state = "MENU"  
 music_on = True
 
 # Camera Position
@@ -56,7 +56,7 @@ class Entity:
         )
         
         for tile in tiles:
-            if tile.type in SOLID_TILES:  # Use constant here
+            if tile.type in SOLID_TILES:  
                 # Get the tile's rect for collision detection
                 tile_rect = Rect(tile.left, tile.top, tile.width, tile.height)
                 
@@ -88,7 +88,7 @@ class Entity:
         )
         
         for tile in tiles:
-            if tile.type in SOLID_TILES:  # Use constant here
+            if tile.type in SOLID_TILES:  
                 # Get the tile's rect for collision detection
                 tile_rect = Rect(tile.left, tile.top, tile.width, tile.height)
                 
@@ -126,7 +126,7 @@ class Player(Entity):
             is_moving = True
         if is_moving:
             if not self.walking_sound_playing:
-                sounds.walking.play(-1)  # Loop indefinitely
+                sounds.walking.play(-1) 
                 self.walking_sound_playing = True
         else:
             if self.walking_sound_playing:
@@ -253,7 +253,7 @@ class Enemy(Entity):
         
         ground_ahead = False
         for tile in tiles:
-            if tile.type in SOLID_TILES:  # Use constant here
+            if tile.type in SOLID_TILES:  
                 if (abs(tile.top - check_y) < 20 and 
                     abs(tile.x - check_x) < TILE_SIZE):
                     ground_ahead = True
@@ -302,7 +302,6 @@ class Enemy(Entity):
         self.animation_timer = 0
         self.animation_frame = 0
 
-# Create player
 player = Player(100, 200)
 
 # Tile mapping
