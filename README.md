@@ -7,43 +7,67 @@ A simple 2D platformer made with Pygame Zero.
 - Python 3.7 or higher
 - Pygame Zero library
 
-## Libraries
-
-- pygame zero
-
 ## Installation
 
-1. **Install Python** (if not already installed):
-   - Download from [python.org](https://www.python.org/downloads/)
-   - During installation, check "Add Python to PATH"
+### 1. Install Python (if not already installed)
 
-2. **Install Pygame Zero**:
-   Open your terminal/command prompt and run:
+**Windows:**
+- Download from [python.org](https://www.python.org/downloads/)
+- During installation, check "Add Python to PATH"
+
+**Mac:**
+- Python 3 is usually pre-installed on Mac
+- Check by opening Terminal and running: `python3 --version`
+- If not installed, download from [python.org](https://www.python.org/downloads/)
+
+**Linux:**
+- Python 3 is usually pre-installed
+- If not, run: `sudo apt-get install python3 python3-pip`
+
+### 2. Install Pygame Zero
+
+Open your terminal/command prompt and run:
+
+**Windows:**
 ```bash
-   pip install pgzero
+pip install pgzero
+```
+
+**Mac/Linux:**
+```bash
+pip3 install pgzero
 ```
 
 ## Running the Game
 
-### Method 1: Using pgzrun (Recommended)
 Navigate to the game folder in your terminal and run:
+
+**Windows:**
 ```bash
 pgzrun pgzgame.py
 ```
-
-### Method 2: Using Python directly
+or
 ```bash
 python pgzgame.py
 ```
 
-### Method 3: Windows - Double Click
+**Mac/Linux:**
+```bash
+pgzrun pgzgame.py
+```
+or
+```bash
+python3 pgzgame.py
+```
+
+**Windows (Alternative):**
 Simply double-click `pgzgame.py` if Python is properly configured.
 
 ## File Structure
 
 Make sure your folder contains:
 ```
-pgzero/
+platformer-game/
 ├── pgzgame.py              # Main game file
 ├── level_data.py           # Level design
 ├── images/                 # Game sprites
@@ -63,10 +87,14 @@ Collect coins and reach the flag while avoiding enemies. Good luck!
 ## Troubleshooting
 
 **"No module named 'pgzero'"**
-- Run: `pip install pgzero`
+- Windows: `pip install pgzero`
+- Mac/Linux: `pip3 install pgzero`
 
 **"No module named 'level_data'"**
 - Make sure `level_data.py` is in the same folder as `pgzgame.py`
 
 **Missing images or sounds**
 - Ensure `images/` and `sounds/` folders exist with all required files
+
+**Mac: "command not found: pgzrun"**
+- Use `python3 pgzgame.py` instead
