@@ -213,7 +213,7 @@ class Enemy(Entity):
             self.detection_range = 200
             self.patrol_distance = 100
             self.images_left = ['snail_walk_a', 'snail_walk_b']
-            self.images_right = ['snail_walk_left_a', 'snail_walk_left_b']
+            self.images_right = ['snail_walk_right_a', 'snail_walk_right_b']
             self.uses_physics = True
         else:  # fly
             super().__init__(x, y, 'fly_a')
@@ -221,7 +221,7 @@ class Enemy(Entity):
             self.detection_range = 250
             self.patrol_distance = 150
             self.images_left = ['fly_a', 'fly_b']
-            self.images_right = ['fly_left_a', 'fly_left_b']
+            self.images_right = ['fly_right_a', 'fly_right_b']
             self.uses_physics = False
             
         
