@@ -40,7 +40,7 @@ pip3 install pgzero
 
 ## Running the Game
 
-Navigate to the game folder in your terminal and run:
+Navigate to the game folder in your terminal (Platformer-Game-) and run:
 
 **Windows:**
 ```bash
