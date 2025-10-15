@@ -9,7 +9,7 @@ A simple 2D platformer made with Pygame Zero.
 
 ## Libraries
 
--pygame zero
+- pygame zero
 
 ## Installation
 
